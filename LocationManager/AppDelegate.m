@@ -123,7 +123,7 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
     NSLog(@"applicationDidEnterBackground");
-    //[[Location sharedLocation].locationManager stopMonitoringSignificantLocationChanges];
+    [[Location sharedLocation].locationManager stopMonitoringSignificantLocationChanges];
     
     if(IS_OS_8_OR_ABOVE) {
         
@@ -132,7 +132,7 @@
             [[Location sharedLocation].locationManager requestWhenInUseAuthorization];
         }
     }
-    //[[Location sharedLocation].locationManager startMonitoringSignificantLocationChanges];
+    [[Location sharedLocation].locationManager startMonitoringSignificantLocationChanges];
     
     [Location sharedLocation].locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;// Set desiredAccuracy as per need
 }
