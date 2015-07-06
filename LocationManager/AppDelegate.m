@@ -81,8 +81,6 @@
             if ([launchOptions objectForKey:UIApplicationLaunchOptionsLocationKey]) {
                 NSLog(@"UIApplicationLaunchOptionsLocationKey");
                 
-                // This "isResumed" flag is just to show that it is receiving location updates
-                
                 [Location sharedLocation].locationManager = [CLLocationManager new];
                 [Location sharedLocation].locationManager.delegate = self;
                 [Location sharedLocation].locationManager.desiredAccuracy = kCLLocationAccuracyBestForNavigation;
@@ -136,7 +134,7 @@
     }
     //[[Location sharedLocation].locationManager startMonitoringSignificantLocationChanges];
     
-    [Location sharedLocation].locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+    [Location sharedLocation].locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;// Set desiredAccuracy as per need
 }
 
 
@@ -145,8 +143,6 @@
 {
     NSLog(@"applicationDidBecomeActive");
     
-    
-    //Remove the "isResumed" Flag after the app is active again.
     
     if([Location sharedLocation].locationManager)
         [[Location sharedLocation].locationManager stopMonitoringSignificantLocationChanges];

@@ -1,9 +1,9 @@
 //
-//  LocationShareModel.h
-//  Location
+//  Location.h
+//  LocationManager
 //
-//  Created by Rick
-//  Copyright (c) 2014 Location. All rights reserved.
+//  Created by Durgesh Gupta on 7/6/15.
+//  Copyright (c) 2015 Durgesh Gupta. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
