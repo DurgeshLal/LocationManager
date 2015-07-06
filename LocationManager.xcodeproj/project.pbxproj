@@ -173,6 +173,11 @@
 				TargetAttributes = {
 					EA9311C41B4AC56800568529 = {
 						CreatedOnToolsVersion = 6.3.2;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					EA9311DD1B4AC56800568529 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -424,6 +429,7 @@
 				EA9311EA1B4AC56800568529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EA9311EB1B4AC56800568529 /* Build configuration list for PBXNativeTarget "LocationManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +438,7 @@
 				EA9311ED1B4AC56800568529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
